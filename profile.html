@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>its my porfolio</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="./fontawesome-free-6.6.0-web/js/all.js"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+           <img src="Screenshot 2024-09-23 211532.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">cources</a></li>
+                <li><a href="#">contact</a></li>
+    
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hey..<span>I'm Badal </span><br> From India </h1>
+        </div>
+    </div>
+   </div>
+ <!--about me-->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="aboutbada.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Proactive and technicaly skiled web developer with a foundation in Electrical and Electronic Engineering and advanced training in web development .
+                    My engineering background has equpied me with stron analytical and problem solving skill,
+                    which I apply to eveloping efficient and scalable web solutions.Proficient in HTML,CSS,Javascript and mordern framework. 
+                     Strong in design and integration with intuitive problem-solving skills.Proficient in JAVA,JAVASCRIPT,HTML and CSS, 
+                    Bootstrap Looking to start the career as an entry-level software engineering</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-link "onclick="opentab('Education')">Education</p>
+                    </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web interface</li>
+                                <li><span>Web Developement</span><br>Designing Web interface</li>
+                                <li><span>FrontEnd/BackEnd</span><br>Designing Web interface</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="Education">
+                            <ul>
+                                <li><span>B.tech</span><br>Electrical and Electronic Engineering <br>
+                                <p>Berhampur,Ganjam,Odisha</p>
+                                </li>
+                                <li><span>Diploma</span><br>Electrical Engineering <br>
+                                <p>Berhampur,Bhabandha,Ganjam,Odisha</p>
+                                </li>
+                           </ul>
+                        </div>
+                </div>
+        </div>
+    </div>
+   </div>
+  <!--services-->
+  <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="serivices-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developement</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam.
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <a href="#">Learm More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>FrontEnd Developement</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam.
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <a href="#">Learm More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam.
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <a href="#">Learm More</a>
+                </div>
+            </div>
+        </div>
+  </div>
+  <!--portfolio-->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="clas-list">
+            <div class="work">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+  </div>
+   <script>
+    var tablinks=document.getElementsByClassName('tab-link');
+    var tabcontents=document.getElementsByClassName('tab-content');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add('active-tab')
+
+    }
+   </script>
+</body>
+</html>
